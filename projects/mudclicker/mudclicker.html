@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mudclicker</title>
+        <link rel="icon" href="./icon.png">
+        <meta name="Description" content="Development portfolio for Corgii. Web development projects.">
+        <link rel="stylesheet" href="style.css"/>
+        <script type="text/javascript" src="./progressBar.js"></script>
+    </head>
+    <body>
+        <a href="../../index.html"><<< go home</a>
+
+        
+        <!-- Trigger/Open The Modal -->
+        <a id="myBtn">&lt;change log&gt;</a>
+        
+        <h1><i style="color: cyan;">{</i> mudclicker <i style="color: cyan;">}</i></h1>
+        <hr>
+        <div class="gamebody">
+
+            <div class="column1">
+                <h2>gamer coins: 0</h2>
+                <div class="locCounters" style="display: inline-flex; align-items: center;">
+                    <h3>
+                        t1 locs
+                        <div class="locCounter" id="t1count">0</div>
+                    </h3>
+                    <h3>
+                        t2 locs
+                        <div class="locCounter" id="t2count">0</div>
+                    </h3>
+                    <h3>
+                        t3 locs
+                        <div class="locCounter" id="t3count">0</div>
+                    </h3>
+                    <h3>
+                        t4 locs
+                        <div class="locCounter" id="t4count">0</div>
+                    </h3>
+                </div>
+                <br>
+                <div style="display: inline-flex; align-items: center;">
+                    <button onclick="move(t1)">scrape</button>
+                    <p>-----scrape t1 locs</p>
+                </div>
+                <div class="Progress" id="t1Progress">
+                    <div class="Bar" id="t1Bar"></div>
+                </div>
+                <div class="barText" id="t1Received"></div>
+            </div>
+
+            <div class="column2">
+                <h2>upgrades:</h2>
+                <div class="tooltip">
+                    <img src="../../images/john.jpg" style="width: 50px; height: 50px;">
+                    <div class="tooltiptext">
+                        <p>T1 Scraper Rewrite</p>
+                        <p>Rewrite your T1 scraper to find locs 20% faster.</p>
+                    </div>
+                </div>
+                <div class="tooltip">
+                    <img src="../../images/john.jpg" style="width: 50px; height: 50px;">
+                    <div class="tooltiptext">
+                        <p>T2 Scraper Rewrite</p>
+                        <p>Rewrite your T2 scraper to find locs 20% faster.</p>
+                    </div>
+                </div>
+                <div class="tooltip">
+                    <img src="../../images/john.jpg" style="width: 50px; height: 50px;">
+                    <div class="tooltiptext">
+                        <p>T3 Scraper Rewrite</p>
+                        <p>Rewrite your T3 scraper to find locs 20% faster.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="topModal">
+                            <p>change logs</p>
+                        </div>
+                        <div class="midModal">
+                            <p>[0.0.1] - 2020-11-23<br>
+                                <hr>
+                                ### Added<br>
+                                - Header<br>
+                                - Two column layout<br>
+                                - Change logs modal<br>
+                                - Clunky ass UI<br>
+                                - Test button and bar for scraping/cracking<br>
+                                - Placeholder upgrade image courtesy of my friend John<br>
+                            </p>
+                        </div>
+                        <div class="botModal">
+                            <p>i'm very bad at writing change logs</p>
+                        </div>
+                    </div>
+                </div>
+
+    </body>
+</html>
