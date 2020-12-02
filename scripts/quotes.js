@@ -2,18 +2,12 @@ var phrases = [
     "please don't read my html.",
     "blame alpha.",
     "i protect my upgrades with xena.defender!",
-    "java is for scrubs. python is for kids.",
-    "online code prettifier go brrrrrrr.",
     "rip kotlc - lost but never forgotten ;(",
-    "more onions????",
     "jennifer dumped me.",
-    "he pushed me down the stairs; bonked me",
     "console.log('go outside, sweaty.');",
     "this website is objectively not funny.",
     "woof. woof. woof. woof. woof. woof.",
-    "comin' atchu like cleopatru.",
     "the carbuncle ate itself.",
-    "you can't be sarcastic with fuckin' morons.",
 ];
 
 function getRndInteger(max) {
