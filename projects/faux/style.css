@@ -3,8 +3,10 @@ body {
   width:80%;
   margin: auto;
   padding-top: 6em;
+}
+html {
+  height: 100%;
   background-color: black;
-  background-image: radial-gradient(rgba(10, 10, 10, 0.685), rgb(0, 0, 0) 100%), repeating-linear-gradient(#000000 10px, #313131 20px, #000000 30px);
 }
 body {
   color:white;
@@ -12,11 +14,6 @@ body {
 }
 body {
   animation: textShadow;
-}
-html {
-  height: 100%;
-  background-color: black;
-  background-image: radial-gradient(rgba(10, 10, 10, 0.685), rgb(0, 0, 0) 100%), repeating-linear-gradient(#000000 10px, #313131 20px, #000000 30px);
 }
 li::marker {
   content: "> ";

@@ -1,6 +1,4 @@
 body {
-  background-color: black;
-  background-image: radial-gradient(rgba(10, 10, 10, 0.685), rgb(0, 0, 0) 100%), repeating-linear-gradient(#000000 10px, #212121 20px, #000000 30px);
   max-width: 720px;
   width:80%;
   margin: auto;
@@ -13,10 +11,19 @@ body {
 body {
   animation: textShadow;
 }
+html {
+  height: 100%;
+  background-color: black;
+  background-image: radial-gradient(rgba(10, 10, 10, 0.685), rgb(0, 0, 0) 100%), repeating-linear-gradient(#000000 10px, #313131 20px, #000000 30px);
+}
+hr {
+  border: 0px;
+  border-top: 1px dashed white;
+}
 li::marker {
   content: "> ";
 }
-li {
+li { 
   padding-bottom: 1em;
 }
 ul {
@@ -175,4 +182,13 @@ button:focus {
   100% {
       border-right: 0.08rem solid rgba(255, 255, 255, 0.2);
  }
+}
+
+.progressBar {
+  display: inline;
+  color:#3aff3a;
+}
+
+#FAUX {
+  display: none;
 }
