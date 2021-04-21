@@ -24,7 +24,7 @@ li::marker {
   content: "> ";
 }
 li { 
-  padding-bottom: 1em;
+  padding-bottom: .5em;
 }
 ul {
   padding-left: 1em;
@@ -48,23 +48,7 @@ dd, dt, p, .inline {
 .mobile {
   display: none;
 }
-/* unvisited link */
-a:link {
-  color: white;
-  font-weight: bold;
-}
-/* visited link */
-a:visited {
-  color: rgb(155,155,155);
-}
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-/* selected link */
-a:active {
-  color: blue;
-}
+
 dd {
   padding-left: 2em;
   text-indent:-2em;
@@ -98,19 +82,19 @@ dd {
 
 @keyframes slowGlow {
   0% {
-    text-shadow: 1px 1px 7px rgba(255,255,255, 0.0), -1px 1px 7px rgba(255,255,255, 0.0), -1px -1px 7px rgba(255,255,255, 0.0), 1px -1px 7px rgba(255,255,255, 0.0);
+    text-shadow: 1px 1px 7px rgba(255,255,255, 0.1), -1px 1px 7px rgba(255,255,255, 0.1), -1px -1px 7px rgba(255,255,255, 0.1), 1px -1px 7px rgba(255,255,255, 0.1);
  }
  15% {
-  text-shadow: 1px 1px 7px rgba(255,255,255, 0.0), -1px 1px 7px rgba(255,255,255, 0.0), -1px -1px 7px rgba(255,255,255, 0.0), 1px -1px 7px rgba(255,255,255, 0.0);
+  text-shadow: 1px 1px 7px rgba(255,255,255, 0.25), -1px 1px 7px rgba(255,255,255, 0.25), -1px -1px 7px rgba(255,255,255, 0.25), 1px -1px 7px rgba(255,255,255, 0.25);
 }
   50% {
-    text-shadow: 1px 1px 7px rgba(255,255,255, 0.5), -1px 1px 7px rgba(255,255,255, 0.5), -1px -1px 7px rgba(255,255,255, 0.5), 1px -1px 7px rgba(255,255,255, 0.5);
+    text-shadow: 1px 1px 7px rgba(255,255,255, 0.66), -1px 1px 7px rgba(255,255,255, 0.66), -1px -1px 7px rgba(255,255,255, 0.66), 1px -1px 7px rgba(255,255,255, 0.66);
  }
  85% {
-  text-shadow: 1px 1px 7px rgba(255,255,255, 0.0), -1px 1px 7px rgba(255,255,255, 0.0), -1px -1px 7px rgba(255,255,255, 0.0), 1px -1px 7px rgba(255,255,255, 0.0);
+  text-shadow: 1px 1px 7px rgba(255,255,255, 0.25), -1px 1px 7px rgba(255,255,255, 0.25), -1px -1px 7px rgba(255,255,255, 0.25), 1px -1px 7px rgba(255,255,255, 0.25);
 }
   100% {
-    text-shadow: 1px 1px 7px rgba(255,255,255, 0.0), -1px 1px 7px rgba(255,255,255, 0.0), -1px -1px 7px rgba(255,255,255, 0.0), 1px -1px 7px rgba(255,255,255, 0.0);
+    text-shadow: 1px 1px 7px rgba(255,255,255, 0.1), -1px 1px 7px rgba(255,255,255, 0.1), -1px -1px 7px rgba(255,255,255, 0.1), 1px -1px 7px rgba(255,255,255, 0.1);
  }
 }
 
@@ -186,9 +170,55 @@ button:focus {
 
 .progressBar {
   display: inline;
-  color:#3aff3a;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgba(58, 255, 58, .05);
+  animation: rainbow 2s linear infinite;
 }
 
-#FAUX {
-  display: none;
+.project_title {
+  font-size: 1em;
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+  font-weight: bold;
+}
+/* visited link */
+a:visited {
+  color: white;
+}
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+/* selected link */
+a:active {
+  color: blue;
+}
+
+@keyframes rainbow {
+  0% {
+    color: rgb(255, 60, 60);
+ }
+  20% {
+    color: rgb(255, 255, 60);
+}
+  40% {
+    color: rgb(0, 255, 0);
+ }
+  60% {
+    color: rgb(56, 142, 255);
+}
+  80% {
+    color: rgb(208, 55, 255);
+ }
+ 100% {
+  color: rgb(255, 60, 60);
+ }
+}
+
+.body {
+  animation: rainbow 5s infinite;
 }
