@@ -6,7 +6,7 @@ var t1 = {
 }
 
 
-function move(item) {
+function move(item) {  // animates bar
     if (item.cooldown == true) {
         return;
     }
@@ -36,7 +36,7 @@ function move(item) {
 }
 
 
-function receiveGC(name) {
+function receiveGC(name) { // displays receival of gc
     var element = document.getElementById(name + "Received");
     element.innerHTML = "received xxx,xxx gc";
     var opac = 100;

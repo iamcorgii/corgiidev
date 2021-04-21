@@ -15,6 +15,7 @@ html {
   height: 100%;
   background-color: black;
   background-image: radial-gradient(rgba(10, 10, 10, 0.685), rgb(0, 0, 0) 100%), repeating-linear-gradient(#000000 10px, #313131 20px, #000000 30px);
+  background-attachment: fixed;
 }
 hr {
   border: 0px;
@@ -35,6 +36,11 @@ ul {
   text-align: justify;
 }
 /* For desktop: */
+dt a {
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: #fff 1px dashed;
+}
 pre {
   font-size: 1em;
 }
