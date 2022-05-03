@@ -1,4 +1,4 @@
-body {
+#content {
   max-width: 720px;
   width:80%;
   margin: auto;
@@ -6,17 +6,15 @@ body {
   padding-top: 50px;
   padding-bottom: 150px;
 }
-body {
+#content {
   color:white;
   font-family: monospace;
 }
 body {
-  animation: textShadow;
-}
-html {
+  margin: 0;
   height: 100%;
   background-color: black;
-  background-image: radial-gradient(rgba(10, 10, 10, 0.685), rgb(0, 0, 0) 100%), repeating-linear-gradient(#000000 10px, #313131 20px, #000000 30px);
+  background-image: radial-gradient(rgba(10, 10, 10, 0.685), rgb(0, 0, 0) 100%), repeating-linear-gradient(#000000 11px, #313131 22px, #000000 33px);
   background-attachment: fixed;
 }
 hr {
@@ -32,7 +30,7 @@ li {
 ul {
   padding-left: 1em;
 }
-​ pre {
+​pre {
   white-space: pre-wrap;
   word-wrap: break-word;
   text-align: justify;
@@ -75,7 +73,7 @@ dd {
 .blink {
   animation: blinker .6s linear infinite;
 }
-/*currently unused*/
+
 @keyframes blinker {
   0% {
       opacity: 1;
@@ -264,3 +262,36 @@ a:active {
 #support-btn {
   animation: rainbowText 5s linear infinite;
 }
+
+
+/* splash */
+
+#splash {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#splash > pre {
+  color: white;
+  font-size: 20px;
+  margin: 5px;
+}
+
+#content {
+  display: none;
+}
+
+.splash_quote > .txt {
+  border-right: 0.08rem solid #fff;
+  padding-right: 2px;
+ /* Animating the cursor */
+  animation: blinkin 0.8s infinite;
+}
+
+/* end splash */
