@@ -42,12 +42,12 @@ p, pre {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: radial-gradient(rgba(10, 10, 10, 0.685), rgb(0, 0, 0) 100%), repeating-linear-gradient(#000000 11px, #313131 22px, #000000 33px);
 }
 
 #left-container {
     float: left;
     height: 100%;
-    background-image: radial-gradient(rgba(10, 10, 10, 0.685), rgb(0, 0, 0) 100%), repeating-linear-gradient(#000000 11px, #313131 22px, #000000 33px);
     border-radius: 2em 0 0 2em
 }
 
