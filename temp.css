@@ -13,8 +13,30 @@ body {
     font-family: monospace;
 }
 
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -300% center;
+    }
+}
+
 pre {
     color: orange;
+    font-weight: bold;
+    animation: background-pan 7s linear infinite;
+    background: linear-gradient(
+        to right,
+        rgb(255, 152, 74),
+        rgb(202, 78, 29),
+        rgb(202, 78, 29),
+        rgb(255, 152, 74)
+    );
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* white-space: nowrap; */
 }
 
 html {
