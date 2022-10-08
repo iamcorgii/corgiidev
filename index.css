@@ -1,0 +1,148 @@
+body {
+	background-image: url("./images/mountains.svg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	color: white;
+	font-family: sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+#content-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#pfp-wrapper {
+	position: relative;
+	height: min(20vh, 40vw);
+	width: min(20vh, 40vw);
+	margin: 20px;
+	padding-top: 50px;
+}
+
+@keyframes float {
+	0% {
+		top: 0px;
+	}
+	45% {
+		top: 50px;
+	}
+	50% {
+		top: 50px;
+	}
+	95% {
+		top: 0px;
+	}
+}
+
+#pfp-img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border-radius: 100%;
+	border: 5px solid white;
+	height: min(20vh, 40vw);
+	box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.5);
+	animation: float 7s infinite cubic-bezier(0.7, 0.33, 0.33, 0.7);
+}
+
+#bio-wrapper {
+	border-radius: 20px;
+	padding: 50px;
+	background: rgba(10, 12, 31, 0.5);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(8.4px);
+	border: 3px solid rgb(255, 255, 255);
+	width: 70%;
+	max-width: 800px;
+}
+
+#bio-wrapper h1 {
+	margin-top: 0px;
+	width: 100%;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+hr {
+	width: 80%;
+}
+
+#bio-wrapper p {
+	font-size: larger;
+}
+
+a:visited {
+	color: rgb(255, 144, 104);
+}
+
+a {
+	color: rgb(255, 201, 102);
+}
+
+#photo-credit {
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+	color: rgb(85, 87, 190);
+}
+
+#bio-icons-wrapper {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+}
+
+.acct-icon {
+	height: 50px;
+	margin: 0px 20px;
+	border-radius: 100%;
+	border: 2px solid white;
+	box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.inactive-account {
+	opacity: 0.33;
+	box-shadow: none;
+}
+
+@keyframes FadeIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.1);
+	}
+
+	85% {
+		opacity: 1;
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#bio-wrapper {
+		box-sizing: border-box;
+		width: 95%;
+	}
+	#bio-icons-wrapper {
+		justify-content: space-evenly;
+	}
+	.acct-icon {
+		margin: 0px;
+	}
+}

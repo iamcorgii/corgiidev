@@ -1,0 +1,46 @@
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+body {
+    height: 98vh;
+    color: white;
+    font-size: 1.2em;
+    font-family: monospace;
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -300% center;
+    }
+}
+
+pre {
+    color: orange;
+    font-weight: bold;
+    animation: background-pan 7s linear infinite;
+    background: linear-gradient(
+        to right,
+        rgb(255, 152, 74),
+        rgb(202, 78, 29),
+        rgb(202, 78, 29),
+        rgb(255, 152, 74)
+    );
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* white-space: nowrap; */
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+    background-image: radial-gradient(rgba(10, 10, 10, 0.685), rgb(0, 0, 0) 100%), repeating-linear-gradient(#000000 11px, #313131 22px, #000000 33px);
+}

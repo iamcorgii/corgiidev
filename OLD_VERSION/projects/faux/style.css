@@ -1,0 +1,382 @@
+body {
+  max-width: 1280px;
+  width:80%;
+  margin: auto;
+  padding-top: 6em;
+}
+html {
+  height: 100%;
+  background-color: black;
+}
+body {
+  color:white;
+  font-family: monospace;
+}
+body {
+  animation: textShadow;
+}
+li::marker {
+  content: "> ";
+}
+li {
+  padding-bottom: 1em;
+}
+ul {
+  padding-left: 1em;
+}
+​ pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
+}
+/* For desktop: */
+pre {
+  font-size: 1em;
+}
+dd, dt, p, .inline {
+  font-size: 1em;
+}
+/*desktop tag*/
+.desktop {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+/* unvisited link */
+a:link {
+  color: white;
+  font-weight: bold;
+}
+/* visited link */
+a:visited {
+  color: rgb(155,155,155);
+}
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+/* selected link */
+a:active {
+  color: blue;
+}
+dd {
+  padding-left: 2em;
+  text-indent:-2em;
+}
+.crt {
+  font-weight: bold;
+}
+.crt:hover {
+  text-shadow: 1px 1px 7px rgba(255,255,255, 0.5), -1px 1px 7px rgba(255,255,255, 0.5), -1px -1px 7px rgba(255,255,255, 0.5), 1px -1px 7px rgba(255,255,255, 0.5);
+}
+.blink {
+  animation: blinker .6s linear infinite;
+}
+/*currently unused*/
+@keyframes blinker {
+  0% {
+      opacity: 1;
+ }
+  50% {
+      opacity: .25;
+ }
+  100% {
+      opacity: 0;
+ }
+}
+@keyframes pulse {
+  0% {
+    background-color:cyan;
+  }
+  50% {
+    background-color:blue;
+  }
+  100% {
+    background-color:cyan;
+} 
+}
+
+
+@keyframes textShadow {
+  0% {
+      text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  5% {
+      text-shadow: 2.7928974010788217px 0 1px rgba(0,30,255,0.5), -2.7928974010788217px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  10% {
+      text-shadow: 0.02956275843481219px 0 1px rgba(0,30,255,0.5), -0.02956275843481219px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  15% {
+      text-shadow: 0.40218538552878136px 0 1px rgba(0,30,255,0.5), -0.40218538552878136px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  20% {
+      text-shadow: 3.4794037899852017px 0 1px rgba(0,30,255,0.5), -3.4794037899852017px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  25% {
+      text-shadow: 1.6125630401149584px 0 1px rgba(0,30,255,0.5), -1.6125630401149584px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  30% {
+      text-shadow: 0.7015590085143956px 0 1px rgba(0,30,255,0.5), -0.7015590085143956px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  35% {
+      text-shadow: 3.896914047650351px 0 1px rgba(0,30,255,0.5), -3.896914047650351px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  40% {
+      text-shadow: 3.870905614848819px 0 1px rgba(0,30,255,0.5), -3.870905614848819px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  45% {
+      text-shadow: 2.231056963361899px 0 1px rgba(0,30,255,0.5), -2.231056963361899px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  50% {
+      text-shadow: 0.08084290417898504px 0 1px rgba(0,30,255,0.5), -0.08084290417898504px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  55% {
+      text-shadow: 2.3758461067427543px 0 1px rgba(0,30,255,0.5), -2.3758461067427543px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  60% {
+      text-shadow: 2.202193051050636px 0 1px rgba(0,30,255,0.5), -2.202193051050636px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  65% {
+      text-shadow: 2.8638780614874975px 0 1px rgba(0,30,255,0.5), -2.8638780614874975px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  70% {
+      text-shadow: 0.48874025155497314px 0 1px rgba(0,30,255,0.5), -0.48874025155497314px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  75% {
+      text-shadow: 1.8948491305757957px 0 1px rgba(0,30,255,0.5), -1.8948491305757957px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  80% {
+      text-shadow: 0.0833037308038857px 0 1px rgba(0,30,255,0.5), -0.0833037308038857px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  85% {
+      text-shadow: 0.09769827255241735px 0 1px rgba(0,30,255,0.5), -0.09769827255241735px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  90% {
+      text-shadow: 3.443339761481782px 0 1px rgba(0,30,255,0.5), -3.443339761481782px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  95% {
+      text-shadow: 2.1841838852799786px 0 1px rgba(0,30,255,0.5), -2.1841838852799786px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+  100% {
+      text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+ }
+}
+
+.Progress {
+  width: 100%;
+  background-color: grey;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white;
+}
+
+.Bar {
+  width: 1%;
+  height: 30px;
+  background-color: cyan;
+}
+
+.barText {
+  color:white;
+  font-weight: bold;
+}
+
+
+
+h3 {
+  padding-left: 3em;
+  text-align: center;
+  margin: auto;
+}
+button {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0);
+  color: white;
+  border: 1px solid white;
+  font-family: monospace;
+  padding: 2px, 5px;
+  width: 5em;
+}
+.locCounter {
+  text-align: center;
+}
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 240px;
+  background-color: rgba(255,255,255,.80);
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.gamebody {
+  display:flex;
+}
+.column1 {
+  flex:70%;
+  padding-right: 5%;
+}
+.column2 {
+  flex:25%
+}
+
+
+button:active {
+  /* background-color:rgba(255,255,255,.5); */
+  background-color: white;
+  color:black;
+}
+button:focus {
+  border-radius: 0px;
+  border: 1px dashed white;
+}
+@media (pointer:none), (pointer:coarse) {
+  pre {
+      font-size: .9vw;
+      color:white;
+ }
+  body {
+      max-width: 80%;
+      font-size: 1.5vw;
+ }
+  .inline {
+      display: inline;
+ }
+  button {
+      width: 15vw;
+      font-size: 3.5vw;
+ }
+  dd, dt, p {
+      font-size: 1.5vw;
+ }
+  .desktop {
+      display: none;
+ }
+  .mobile {
+      display: block;
+ }
+  ul {
+      padding-left: 1.5vw;
+ }
+}
+.container {
+  display: flex;
+ /* Remove horizontal 'justify-content' center if you want the base text not to move */
+  align-items: center;
+}
+/* ADD CURSOR */
+.txt-type > .txt {
+  border-right: 0.08rem solid #fff;
+  padding-right: 2px;
+ /* Animating the cursor */
+  animation: blinkin 0.8s infinite;
+}
+/* ANIMATION */
+@keyframes blinkin {
+  0% {
+      border-right: 0.08rem solid rgba(255, 255, 255, 1);
+ }
+  100% {
+      border-right: 0.08rem solid rgba(255, 255, 255, 0.2);
+ }
+}
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #000000;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding-right: .5em;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myBtn {
+  padding-left: 20px;
+}
+
+@-webkit-keyframes animatetop {
+  from {opacity:0} 
+  to {opacity:1}
+}
+@keyframes animatetop {
+  from {opacity:0}
+  to {opacity:1}
+}
+
+.topModal {
+  padding: 2px 16px;
+  background-color: #313131;
+  color: white;
+  font-weight: bolder;
+}
+
+.midModal {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 2px 16px;
+  background-color: #212121;
+}
+
+.botModal {
+  padding: 2px 16px;
+  background-color: #212121;
+}
