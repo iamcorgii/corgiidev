@@ -3,7 +3,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	min-height: 100vh;
-	width: 100vw;
+	width: 100%;
 	overflow-x: hidden;
 	color: white;
 	font-family: sans-serif;
@@ -14,6 +14,7 @@ body {
 #content-wrapper {
 	width: 100%;
 	min-height: 100vh;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -65,7 +66,6 @@ body {
 	border: 3px solid rgb(255, 255, 255);
 	width: 70%;
 	max-width: 800px;
-	min-width: 375px;
 }
 
 #bio-wrapper h1 {
@@ -92,9 +92,6 @@ a {
 }
 
 #photo-credit {
-	position: absolute;
-	bottom: 3px;
-	right: 3px;
 	color: rgb(85, 87, 190);
 }
 
@@ -118,6 +115,13 @@ a {
 .inactive-account {
 	opacity: 0.33;
 	box-shadow: none;
+}
+
+#credit-wrapper {
+	margin-top: 25px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 @keyframes FadeIn {
@@ -145,5 +149,11 @@ a {
 	}
 	.acct-icon {
 		margin: 0px;
+	}
+	#bio-wrapper h1 {
+		margin-top: 0px;
+		width: 100%;
+		text-align: center;
+		font-size: 8vw;
 	}
 }
