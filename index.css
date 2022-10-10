@@ -34,13 +34,37 @@ body {
 		top: 0px;
 	}
 	45% {
-		top: 35px;
+		top: 25px;
 	}
 	50% {
-		top: 35px;
+		top: 25px;
 	}
 	95% {
 		top: 0px;
+	}
+}
+
+@keyframes shake {
+	0% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+
+@keyframes slide {
+	0% {
+		margin-left: -30px;
+	}
+	50% {
+		margin-left: 30px;
+	}
+	100% {
+		margin-left: -30px;
 	}
 }
 
@@ -52,17 +76,18 @@ body {
 	border: 5px solid white;
 	height: min(20vh, 50vw);
 	box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.5);
-	animation: float 7s infinite cubic-bezier(0.7, 0.33, 0.33, 0.7);
+	animation: float 7s infinite cubic-bezier(0.7, 0.33, 0.33, 0.7),
+		shake 5s infinite ease-in-out, slide 11s infinite ease-in-out;
 }
 
 #bio-wrapper {
 	border-radius: 20px;
 	padding: 50px;
-	background: rgba(10, 12, 31, 0.5);
+	background: rgba(10, 12, 31, 0.66);
 	border-radius: 16px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-	backdrop-filter: blur(7px);
-	-webkit-backdrop-filter: blur(8.4px);
+	backdrop-filter: blur(9.2px);
+	-webkit-backdrop-filter: blur(9.2px);
 	border: 3px solid rgb(255, 255, 255);
 	width: 70%;
 	max-width: 800px;
@@ -73,6 +98,7 @@ body {
 	width: 100%;
 	text-align: center;
 	font-size: 2.5rem;
+	text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 hr {
